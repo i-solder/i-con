@@ -37,7 +37,7 @@ Connector on i-Tool
 
 ![i-Tool DIN connector](img/connector-din-itool.png)
 
-Connector on ChipTool (_mirrored_)
+Connector on ChipTool
 ----------------------------------
 
 ![i-Tool DIN connector](img/connector-din-chiptool.png)
@@ -49,10 +49,11 @@ To communicate with i-Tool, station uses `P/IO` wire which combines both power a
 
 UART protocol is used:
 
-- 250000 bps
-- One start bit
-- No parity bit
-- One stop bit
+- Rate: **250000 bps**
+- Start bit: **1**
+- Data bit: **8**
+- Parity bit: **No**
+- Stop bit: **1**
 
 Data exchange
 -------------
@@ -90,7 +91,7 @@ Messages
 Get tool ID
 -----------
 
-This data exchange is implemented once during startup.
+This data exchange is implemented every second (1 Hz) after powering station up until receiving successful response from tool.
 
 Request:
 
@@ -104,15 +105,15 @@ Response:
 - Data:
   * **0x2802**: i-Tool
 
-Example:
+Example (raw hex):
 
-- Request (hex): `02 2F 05 01 00 02 3A 4D`
-- Response (hex): `02 2F 07 01 00 02 02 28 C1 A4`
+- Request: `02 2F`&nbsp;`05`&nbsp;`01 00`&nbsp;`02`&nbsp;`3A 4D`
+- Response: `02 2F`&nbsp;`07`&nbsp;`01 00`&nbsp;`02`&nbsp;**`02 28`**&nbsp;`C1 A4`
 
 Get tool revision
 -----------------
 
-This data exchange is implemented once during startup.
+This data exchange is implemented once during startup after getting tool ID.
 
 Request:
 
@@ -127,10 +128,13 @@ Response:
   * [0]: (u8) Minor
   * [1]: (u8) Major
 
-Example:
+Example (raw hex):
 
-- Request (hex): `02 2F 05 40 00 02 A7 67`
-- Response (hex): `02 2F 07 40 00 02 00 01 D1 CC`
+- Request: `02 2F`&nbsp;`05`&nbsp;`40 00`&nbsp;`02`&nbsp;`A7 67`
+- Response: `02 2F`&nbsp;`07`&nbsp;`40 00`&nbsp;`02`&nbsp;**`00 01`**&nbsp;`D1 CC`
+  * Minor: **0**
+  * Major: **1**
+
 
 Get status
 ----------
@@ -158,13 +162,13 @@ Flags:
 | RESERVED | IDLE | OK |
 
 - `RESERVED`: Reserved for future use
-- `IDLE`: Set when tool is not moved
-- `OK`: No error state
+- `IDLE`: **1** if tool is not moved (e.g. on stand), **0** otherwise (e.g. during active soldering)
+- `OK`: **1** for no error state, **0** otherwise
 
-Example:
+Example (raw hex):
 
-- Request (hex): `02 2F 05 10 00 05 8E 49`
-- Response (hex): `02 2F 0A 10 00 05 52 0A 1C 03 00 69 04`
+- Request: `02 2F`&nbsp;`05`&nbsp;`10 00`&nbsp;`05`&nbsp;`8E 49`
+- Response: `02 2F`&nbsp;`0A`&nbsp;`10 00`&nbsp;`05`&nbsp;**`52 0A`&nbsp;`1C`&nbsp;`03 00`**&nbsp;`69 04`
   * Heating element temperature: 0x0A52 = **264.2 &deg;C**
   * Handle temperature: 0x1C = **28&deg;C**
   * Flags: 0x0003 = **IDLE | OK**
