@@ -1,0 +1,166 @@
+EESchema-DOCLIB  Version 2.0 Date: 12/01/2017 19:54:55
+#
+$CMP ATmega128-16AU
+D 8-bit AVR Microcontroller
+K IC, Digital, Microcontroller, MCU
+F http://www.atmel.com/Images/doc2467.pdf
+$ENDCMP
+#
+$CMP ATmega88-20AU
+D 8-bit AVR Microcontroller
+K IC, Digital, Microcontroller, MCU
+F http://www.atmel.com/Images/Atmel-2545-8-bit-AVR-Microcontroller-ATmega48-88-168_datasheet.pdf
+$ENDCMP
+#
+$CMP C0805
+D Chip capacitor 2x1.25 mm
+K Capacitor
+$ENDCMP
+#
+$CMP BAS70-04
+D Small Signal Schottky Diodes, Dual
+K Diode, Schottky
+$ENDCMP
+#
+$CMP D-MMA
+D MiniMelf Diode (MMA)
+K Diode
+$ENDCMP
+#
+$CMP NC7WZ07
+D TinyLogic UHS Dual Buffer (Open-Drain Outputs)
+K IC, Analog, Buffer
+F https://www.fairchildsemi.com/datasheets/NC/NC7WZ07.pdf
+$ENDCMP
+#
+$CMP TP-SM-1
+D Surface Mount Test Point, 1 mm diameter
+K Test point
+$ENDCMP
+#
+$CMP 74HC4050D
+D Hex High-to-Low Level Shifter
+K IC, Digital, Buffer, Shifter
+F http://www.nxp.com/documents/data_sheet/74HC4050_CNV.pdf
+$ENDCMP
+#
+$CMP BAT54S
+D Schottky Barrier Diodes
+K Diode, Schottky
+$ENDCMP
+#
+$CMP BC857
+D PNP General Purpose Transistor
+K Transistor, PNP
+F http://www.nxp.com/documents/data_sheet/BC856_BC857_BC858.pdf
+$ENDCMP
+#
+$CMP R0805
+D Chip resistor 2x1.25 mm
+K Resistor, 1/8W
+$ENDCMP
+#
+$CMP R1206
+D Chip resistor 3.1x1.55 mm
+K Resistor, 1/4W
+$ENDCMP
+#
+$CMP R2010
+D Chip resistor 4.9x2.4 mm
+K Resistor, 3/4W
+$ENDCMP
+#
+$CMP TST-110-01-D
+D .100" (2.54 mm) Shrouded Terminal Strip, Cable Mate, 7x2
+K Connector, Male
+F http://suddendocs.samtec.com/catalog_english/tst_th.pdf
+$ENDCMP
+#
+$CMP MKS1855-6-0-505
+D Pin connector with snap-in locking device for vertical connections
+K Connector
+F http://www.stocko-contact.com/catalog-pdf/steckverbindersystem-raster-2,5-mm.pdf
+$ENDCMP
+#
+$CMP MKS1856-6-0-606
+D Pin connector with snap-in locking device for vertical connections
+K Connector
+F http://www.stocko-contact.com/catalog-pdf/steckverbindersystem-raster-2,5-mm.pdf
+$ENDCMP
+#
+$CMP MKS1858-6-0-808
+D Pin connector with snap-in locking device for vertical connections
+K Connector
+F http://www.stocko-contact.com/catalog-pdf/steckverbindersystem-raster-2,5-mm.pdf
+$ENDCMP
+#
+$CMP LM1086CS-2.5
+D 1.5-A Low Dropout Positive Regulator
+K IC, Analog, LDO, Regulator
+F http://www.ti.com/lit/ds/symlink/lm1086.pdf
+$ENDCMP
+#
+$CMP LM1086ILD-3.3
+D 1.5-A Low Dropout Positive Regulator
+K IC, Analog, LDO, Regulator
+F http://www.ti.com/lit/ds/symlink/lm1086.pdf
+$ENDCMP
+#
+$CMP OPA335AID
+D 0.05μV/°C max, Single-Supply CMOS Operational Amplifiers Zero-Drift Series
+K IC, Analog, OpAmp
+F http://www.ti.com/lit/ds/symlink/opa335.pdf
+$ENDCMP
+#
+$CMP OPA335AIDBV
+D 0.05μV/°C max, Single-Supply CMOS Operational Amplifiers Zero-Drift Series
+K IC, Analog, OpAmp
+F http://www.ti.com/lit/ds/symlink/opa335.pdf
+$ENDCMP
+#
+$CMP TLP160G
+D Photocoupler, Phototriac Output
+K IC, Analog, Optocoupler
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=16916&prodName=TLP160G
+$ENDCMP
+#
+$CMP TC7S14F
+D Single Schmitt Inverter
+K IC, Digital, Inverter
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=20193&prodName=TC7S14F
+$ENDCMP
+#
+$CMP TP-TH-1
+D Through-hole Test Point, 1 mm diameter hole
+K Test point
+$ENDCMP
+#
+$CMP +10V
+D Power Symbol
+$ENDCMP
+#
+$CMP +24V
+D Power Symbol
+$ENDCMP
+#
+$CMP +24VAC
+D Power Symbol
+$ENDCMP
+#
+$CMP +3V3
+D Power Symbol
+$ENDCMP
+#
+$CMP +5V
+D Power Symbol
+$ENDCMP
+#
+$CMP GND
+D Signal Ground Symbol
+$ENDCMP
+#
+$CMP PE
+D Earth Ground Symbol
+$ENDCMP
+#
+# End Doc Library

@@ -1,0 +1,32 @@
+ground:
+  - signal/GND
+  - earth/PE
+library:
+  - atmel/atmega128
+  - atmel/atmega88
+  - capacitor/c0805
+  - diode/bas70-04
+  - diode/d-mma
+  - fairchild/nc7wz07
+  - misc/tp-sm-1
+  - nxp/74hc4050
+  - nxp/bat54s
+  - nxp/bc857
+  - resistor/r0805
+  - resistor/r1206
+  - resistor/r2010
+  - samtec/tst-110-01-d
+  - stocko/mks1855
+  - stocko/mks1856
+  - stocko/mks1858
+  - ti/lm1086
+  - ti/opa335
+  - toshiba/tlp160g
+  - toshiba/tc7s14f
+  - misc/tp-th-1
+power:
+  - +10V
+  - +24V
+  - +24VAC
+  - +3V3
+  - +5V
